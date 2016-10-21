@@ -107,7 +107,8 @@ function Wit(opts) {
         sessionId: sessionId,
         context: clone(prevContext),
         text: message,
-        entities: json.entities
+        entities: json.entities,
+        confidence: json.confidence
       };
 
       if (json.type === 'msg') {
